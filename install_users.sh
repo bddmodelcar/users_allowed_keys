@@ -16,6 +16,6 @@ done
 
 # DEFAULT PASSWORDS AND SUDO USERS
 usermod -aG sudo sauhaarda
-echo sauhaarda:password | chpasswd
+# echo sauhaarda:password | chpasswd
 usermod -aG sudo tpankaj
-echo tpankaj:password | chpasswd
+# echo tpankaj:password | chpasswd
