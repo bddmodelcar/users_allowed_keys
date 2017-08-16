@@ -2,7 +2,6 @@
 for dir in */ ; do
 USER=${dir::-1}
 useradd -m $USER
-echo $USER:password | chpasswd
 su $USER <<'EOF'
 mkdir -p ~/.ssh
 chmod 0700 ~/.ssh
@@ -14,5 +13,9 @@ cd $USER
 cp -R * .[^.]* /home/$USER/
 chsh -s `which bash` $USER
 done
+
+# DEFAULT PASSWORDS AND SUDO USERS
 usermod -aG sudo sauhaarda
+echo sauhaarda:password | chpasswd
 usermod -aG sudo tpankaj
+echo tpankaj:password | chpasswd
