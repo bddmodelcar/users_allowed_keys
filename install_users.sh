@@ -4,7 +4,7 @@ useradd -m $USER
 su $USER <<'EOF'
 mkdir -p ~/.ssh
 chmod 0700 ~/.ssh
-ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa -b 4096 > /dev/null
+#ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa -b 4096 > /dev/null
 EOF
 cp $USER/.ssh/authorized_keys /home/$USER/.ssh/authorized_keys
 chown $USER:$USER /home/$USER/.ssh/authorized_keys
