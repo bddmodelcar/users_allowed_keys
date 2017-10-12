@@ -1,6 +1,10 @@
 #!/bin/bash
 USER=$1
-useradd -m $USER
+if useradd -m $USER ; then
+    echo "$USER:password" | chpasswd
+    echo "created new default password of "password" for $USER"
+fi
+
 su $USER <<'EOF'
 mkdir -p ~/.ssh
 chmod 0700 ~/.ssh
