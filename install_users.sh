@@ -16,5 +16,3 @@ sleep 2
 # DEFAULT PASSWORDS AND SUDO USERS
 usermod -aG sudo sauhaarda
 # echo sauhaarda:password | chpasswd
-usermod -aG sudo tpankaj
-# echo tpankaj:password | chpasswd
