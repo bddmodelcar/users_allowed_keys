@@ -1,0 +1,1 @@
+echo "sascha:password" | chpasswd
