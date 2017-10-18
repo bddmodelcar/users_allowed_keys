@@ -24,3 +24,7 @@ if [ $host == 'bdd6' ]; then # bdd4 sudo users
     usermod -aG sudo danqing0703
     usermod -aG sudo yexia
 fi
+
+sudo add-apt-repository -y ppa:neovim-ppa/unstable
+sudo apt-get -y update
+sudo apt-get -y install neovim tmux zsh
