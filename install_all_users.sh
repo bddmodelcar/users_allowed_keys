@@ -9,6 +9,7 @@ done
 usermod -aG sudo sauhaarda
 usermod -aG sudo sascha
 usermod -aG sudo karlzipser
+usermod -aG sudo yubeic
 
 host=`hostname`
 if [ $host == 'bdd3' ]; then # bdd3 sudo users
